@@ -2,10 +2,6 @@ README
 
 #Limited XE Assembler
 
-Names:
-
-    Aria Kafie, Htet Hnin Su Wai Class Accounts: cssc4055, cssc4043 Class Information: CS 530, Spring 2024 Assignment Information: Assignment #2, XE assembler program File name: README
-
 File manifest:
 
     main.cpp optab.cpp optab.h parse.cpp parse.h types.cpp types.h test1.sic test2.sic test3.sic makefile README.txt SDD.txt
@@ -27,9 +23,7 @@ Operating Instructions(include any/all command line options/arguments, required 
 
 List/description of novel/significant design decisions:
 
-    This program makes use of error handling to detect invalid file paths, and displays a friendly message in case of user-error.
-    Our program also features a built in arithmetic expression parser which uses classic C/C++ style operator precedence and left to right associativity to evaluate expressions unambiguously
-
+    This program features a built in arithmetic expression parser which uses classic C/C++ style operator precedence and left to right associativity to evaluate expressions unambiguously
 List/description of all known deficiencies or bugs:
 
     There are no currently known deficiencies or bugs within the program, as we have extensively tested and debugged the program across a wide range of test cases.
