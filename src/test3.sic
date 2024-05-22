@@ -1,0 +1,25 @@
+.  SOURCE CODE FOR THE XE VERSION OF THE SIC FAMILY OF COMPUTER
+SUM       START   0                      SAMPLE PROGRAM
+FIRST     LDX    #0
+          LDA    #0          
+         +LDB    #TABLE2     
+          BASE    TABLE2
+LOOP      ADD     TABLE,X    
+SYM1      EQU     LOOP-LOOP + 75 *3
+SYM2      EQU     SYM1 - LOOP + *
+          ADD     TABLE2,X   
+          TIX     COUNT      
+          JLT     LOOP       
+         +STA     TOTAL      
+          RSUB
+          LDA    =X'F5'
+          LDA    #SYM1-2
+MYLIT    +LDA    =C'EOF'
+.
+. hello from the comments
+.
+COUNT     RESW    1
+TABLE     RESW    2000
+TABLE2    RESW    2000
+TOTAL     RESW    1
+          END     FIRST
